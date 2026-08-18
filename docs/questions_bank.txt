@@ -1,0 +1,455 @@
+Certainly! Here are 30 beginner-level multiple-choice questions (MCQs) on C++:
+
+1. What does "C++" stand for?
+   a) Complex Plus
+   b) Comprehensive Programming Language
+   c) C Plus Plus
+   d) Creative Programming Language
+
+2. How do you declare a variable in C++?
+   a) var x;
+   b) x = 5;
+   c) int x;
+   d) variable x;
+
+3. What is the purpose of the "cin" object in C++?
+   "a) Output"
+   "b) Input"
+   "c) Error handling"
+   "d) File handling"
+
+4. 
+   
+
+5. What is the correct syntax for a single-line comment in C++?
+   a) /* comment */
+   b) # comment
+   c) // comment
+   d) ' comment
+
+6. Which C++ data type is used to store decimal numbers?
+   "a) float",
+   "b) int",
+   "c) double",
+   "d) decimal"
+
+7. How do you initialize an array in C++?
+   "a. array myArray;",
+   "b. myArray = {1, 2, 3};:,
+   "c. int myArray[] = {1, 2, 3};",
+   "d. set myArray = [1, 2, 3];"
+
+8. What is the purpose of the "cout" object in C++?
+   a) Input
+   b) Error handling
+   c) File handling
+   d) Output
+
+9. Which operator is used for the modulus operation in C++?
+   "a) %",
+   "b) /",
+   "c) *",
+   "d) //"
+
+10. What does the "sizeof" operator return in C++?
+    a) Size of the data type
+    b) Memory address
+    c) Value of the variable
+    d) Type of the variable
+
+11. How do you declare a constant variable in C++?
+    a) const int x = 5;
+    b) constant x = 5;
+    c) int const x = 5;
+    d) const x;
+
+12. What is the purpose of the "break" statement in a loop?
+    a) Exit the program
+    b) Skip the next iteration
+    c) Terminate the loop
+    d) Pause the loop temporarily
+
+13. What is the role of the "else" statement in an "if-else" construct?
+    a) Specify the condition
+    b) Define the loop body
+    c) Execute when the condition is false
+    d) End the program
+
+14. How do you include a header file in C++?
+    a) #include "file.h"
+    b) include "file.h"
+    c) import "file.h"
+    d) add "file.h"
+
+15. Which C++ loop is used for definite iteration?
+    a) for
+    b) while
+    c) do-while
+    d) switch
+
+16. What is the purpose of the "static" keyword in C++?
+    a) Dynamic memory allocation
+    b) Function overloading
+    c) Linkage specification
+    d) Variable declaration
+
+17. How do you dynamically allocate memory in C++?
+    a) new int;
+    b) malloc(sizeof(int));
+    c) allocate(int);
+    d) create_memory(int);
+
+18. What is the purpose of the "this" pointer in C++?
+    a) Reference to the current object
+    b) Reference to the parent class
+    c) Reference to the derived class
+    d) Reference to the base class
+
+19. What does the "++" operator do in C++?
+    a) Addition
+    b) Increment
+    c) Concatenation
+    d) Decrement
+
+20. Which header file is needed for input and output operations in C++?
+    a) iostream
+    b) stdlib
+    c) conio
+    d) math
+
+21. What is the role of the "return" statement in a function?
+    a) End the function
+    b) Print a value
+    c) Return a value from the function
+    d) Pause the function
+
+22. Which C++ keyword is used for inheritance?
+    a) extend
+    b) inherits
+    c) using
+    d) class
+
+23. What is the default access specifier for members of a class in C++?
+    a) public
+    b) private
+    c) protected
+    d) internal
+
+24. How do you declare a pointer in C++?
+    a) int* ptr;
+    b) ptr = int;
+    c) pointer ptr;
+    d) int ptr;
+
+25. What is the purpose of the "delete" operator in C++?
+    a) Free allocated memory
+    b) Remove a file
+    c) Delete a function
+    d) End the program
+
+26. Which C++ operator is used for logical AND?
+    a) &&
+    b) ||
+    c) &
+    d) |
+
+27. What is the purpose of the "try" and "catch" blocks in C++?
+    a) Error handling
+    b) Loop control
+    c) File handling
+    d) Function definition
+
+28. How do you define a macro in C++?
+    a) #define myMacro 5
+    b) macro myMacro = 5;
+    c) define myMacro 5;
+    d) macro myMacro;
+
+29. What is the purpose of the "const" keyword in a function declaration?
+    a) Specify a constant value
+    b) Indicate a constant function
+    c) Define a constant variable
+    d) Declare a constant loop
+
+30. Which C++ keyword is used to break out of a loop prematurely?
+    a) escape
+    b) exit
+    c) break
+    d) terminate
+
+
+
+
+
+
+
+Certainly! Here are the correct answers for the 30 C++ beginner-level multiple-choice questions:
+
+1. c) C Plus Plus
+2. c) int x;
+3. b) Input
+4. d) void
+5. c) // comment
+6. c) double
+7. c) int myArray[] = {1, 2, 3};
+8. d) Output
+9. a) %
+10. a) Size of the data type
+11. a) const int x = 5;
+12. c) Terminate the loop
+13. c) Execute when the condition is false
+14. a) #include "file.h"
+15. a) for
+16. c) Linkage specification
+17. b) malloc(sizeof(int));
+18. a) Reference to the current object
+19. b) Increment
+20. a) iostream
+21. c) Return a value from the function
+22. a) extend
+23. b) private
+24. a) int* ptr;
+25. a) Free allocated memory
+26. a) &&
+27. a) Error handling
+28. a) #define myMacro 5
+29. b) Indicate a constant function
+30. c) break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Code Based
+Certainly! Here are 30 multiple-choice questions (MCQs) based on code snippets for beginner-level understanding of C++:
+
+1. Question: What will be the output of the following code?
+
+   #include <iostream>
+   using namespace std;
+
+   int main() {
+       cout << "Hello, World!";
+       return 0;
+   }
+   ```
+   a) Hello, World!
+   b) World!
+   c) Hello,
+   d) Compilation Error
+
+2. Question: What does the following code snippet do?
+   
+   int x = 10;
+   int y = 5;
+   int result = x + y;
+   ```
+   a) Multiplies x and y
+   b) Divides x by y
+   c) Adds x and y
+   d) Subtracts y from x
+
+3. Question: What is the correct way to declare a constant in C++?
+   a) `constant int x = 5;`
+   b) `const x = 5;`
+   c) `int const x = 5;`
+   d) `const int x = 5;`
+
+4. Question: What type of loop is used in the following code snippet?
+   
+   for (int i = 0; i < 5; i++) {
+       cout << i << " ";
+   }
+   ```
+   a) while loop
+   b) do-while loop
+   c) for loop
+   d) if-else loop
+
+5. Question: What will be the output of the following code?**
+   
+   int num = 7;
+   if (num % 2 == 0)
+       cout << "Even";
+   else
+       cout << "Odd";
+   ```
+   a) Even
+   b) Odd
+   c) 7
+   d) Compilation Error
+
+6. Question: What is the purpose of the following code snippet?
+   
+   int* ptr = new int;
+   ```
+   a) Declare a pointer variable
+   b) Allocate memory for an integer
+   c) Initialize a pointer with an integer value
+   d) Delete a pointer
+
+7. Question: What is the correct syntax for a function declaration in C++?
+   a) `function myFunction(){}`
+   b) `void myFunction();`
+   c) `define myFunction(){}`
+   d) `myFunction = void(){}`
+
+8. Question: What will be the value of `x` after the following code?
+   
+   int x = 5;
+   x++;
+   ```
+   a) 5
+   b) 6
+   c) 4
+   d) 0
+
+9. Question: How do you define a two-dimensional array in C++?
+   a) `array<int, 2> myArray;`
+   b) `int myArray[2];`
+   c) `int myArray[][];`
+   d) `int myArray[2][2];`
+
+10. Question: What is the purpose of the `break` statement in a switch case?
+    a) Terminate the program
+    b) Exit the loop
+    c) Skip the next case
+    d) End the switch case
+
+11. Question: What does the following code snippet do?
+    
+    int num = 10;
+    cout << "The value is: " << num;
+    
+    a) Print "The value is: 10"
+    b) Assign 10 to "The value is"
+    c) Print "The value is:"
+    d) No output
+
+12. Question: What will be the result of the following code snippet?
+    
+    int a = 5, b = 2;
+    float result = a / b;
+    
+    a) 2.5
+    b) 2.0
+    c) 3.0
+    d) Compilation Error
+
+13. Question: What is the role of the `&` operator in C++?
+    a) Bitwise AND
+    b) Reference operator
+    c) Logical AND
+    d) Address-of operator
+
+14. Question: What is the purpose of the `do-while` loop?
+    a) Execute the loop body at least once
+    b) Execute the loop body until a condition is false
+    c) Execute the loop body based on a condition
+    d) Execute the loop body once if a condition is true
+
+15. Question: What does the `const` keyword indicate in the following code snippet?
+    
+    int addNumbers(const int a, const int b) {
+        return a + b;
+    }
+    
+    a) Constant function
+    b) Constant return value
+    c) Constant parameter values
+    d) Constant loop
+
+16. Question: What is the purpose of the `sizeof` operator in C++?
+    a) Find the size of a data type
+    b) Find the size of a variable
+    c) Find the size of a file
+    d) Find the size of memory
+
+17. Question: What will be the output of the following code snippet?
+    
+    int x = 5;
+    int y = x++;
+    cout << x << " " << y;
+    
+    a) 5 5
+    b) 6 5
+    c) 6 6
+    d) 5 6
+
+18. Question: What is the purpose of the `#include` directive in C++?
+    a) Declare a variable
+    b) Include a header file
+    c) Import a function
+    d) Define a macro
+
+19. Question: How do you access the value pointed to by a pointer in C++?
+    a) `*ptr`
+    b) `ptr*`
+    c) `&ptr`
+    d) `(*ptr)`
+
+20. Question: What is the role of the `else if` statement in C++?
+    a) Combine two conditions with AND
+    b) Combine two conditions with OR
+    c) Add an alternative condition
+    d) End the program
+
+21. Question: What is the purpose of the `nullptr` keyword in C++?
+    a) Nullify a pointer
+    b) Declare a null variable
+    c) Initialize a variable with zero
+    d) End the program
+
+22. Question: What is the output of the following code snippet?
+    
+    for (int i = 0; i < 3; i++)
+        cout << i;
+    
+    a) 012
+    b) 0123
+    c) 01234
+    d) 012345
+
+23. Question: How do you pass an array to a function in C++?
+    a) Pass the array name
+    b) Pass each element individually
+    c) Pass the array size
+    d) Convert the array to a pointer
+
+
+
+
+Certainly! Here are the answers for the code-based beginner-level multiple-choice questions, excluding question number 20 and question number 24:
+
+1. a) Hello, World!
+2. c) Adds x and y
+3. d) `const int x = 5;`
+4. c) for loop
+5. b) Odd
+6. b) Allocate memory for an integer
+7. b) `void myFunction();`
+8. b) 6
+9. d) `int myArray[2][2];`
+10. d) End the switch case
+11. a) Print "The value is: 10"
+12. b) 2.0
+13. b) Reference operator
+14. a) Execute the loop body at least once
+15. c) Constant parameter values
+16. a) Find the size of a data type
+17. b) 6 5
+18. b) Include a header file
+19. a) `*ptr`
+20. c) Add an alternative condition
+21. a) Nullify a pointer
+22. a) 012
+23. a) Pass the array name

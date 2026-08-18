@@ -1,0 +1,404 @@
+/* ==========================================================================
+   EDU_HUB — Assessment & Exam Portal Stylesheet
+   Inherits full design system from style.css (Dark/Light mode & variables)
+   ========================================================================== */
+
+.assessment-container {
+   padding: 2rem;
+   max-width: 900px;
+   margin: 0 auto;
+   width: 100%;
+}
+
+.main {
+   min-height: calc(100vh - 160px);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   transition: filter 0.3s ease;
+}
+
+.main.active {
+   filter: blur(8px);
+   pointer-events: none;
+}
+
+/* ==========================================================================
+   1. ASSESSMENT INTRO CARD (WELCOME SCREEN)
+   ========================================================================== */
+.home {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.home-content {
+   background-color: var(--card-bg);
+   border-radius: var(--radius);
+   padding: 4rem 3.5rem;
+   border: var(--border);
+   box-shadow: var(--shadow);
+   text-align: center;
+   max-width: 650px;
+   width: 100%;
+   transition: var(--transition);
+}
+
+.home-content:hover {
+   box-shadow: var(--shadow-hover);
+}
+
+.home-content .assessment-icon {
+   font-size: 5rem;
+   color: var(--main-color);
+   margin-bottom: 2rem;
+   display: inline-block;
+}
+
+.home-content h1 {
+   font-size: 2.8rem;
+   font-weight: 800;
+   color: var(--black);
+   margin-bottom: 1.5rem;
+   letter-spacing: -0.5px;
+}
+
+.home-content p {
+   font-size: 1.6rem;
+   color: var(--light-color);
+   line-height: 1.7;
+   margin-bottom: 3rem;
+}
+
+.home-content .start-btn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.8rem;
+   padding: 1.2rem 3.5rem;
+   border-radius: var(--radius);
+   box-shadow: 0 4px 14px rgba(205, 92, 92, 0.3);
+}
+
+/* ==========================================================================
+   2. GUIDELINES POPUP MODAL
+   ========================================================================== */
+.popup-info {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0.95);
+   width: 540px;
+   max-width: 92%;
+   background-color: var(--card-bg);
+   border-radius: var(--radius);
+   padding: 3rem;
+   opacity: 0;
+   pointer-events: none;
+   transition: var(--transition);
+   border: var(--border);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+   z-index: 2000;
+}
+
+.popup-info.active {
+   opacity: 1;
+   pointer-events: auto;
+   transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-info h2 {
+   font-size: 2.2rem;
+   font-weight: 800;
+   color: var(--black);
+   border-bottom: var(--border);
+   padding-bottom: 1.5rem;
+   margin-bottom: 2rem;
+}
+
+.popup-info .info {
+   display: flex;
+   align-items: flex-start;
+   gap: 1rem;
+   font-size: 1.5rem;
+   color: var(--light-color);
+   margin: 1.2rem 0;
+   line-height: 1.5;
+}
+
+.popup-info .info i {
+   color: var(--green);
+   margin-top: 3px;
+   font-size: 1.4rem;
+}
+
+.popup-info .btn-group {
+   display: flex;
+   justify-content: flex-end;
+   gap: 1.2rem;
+   border-top: var(--border);
+   padding-top: 2rem;
+   margin-top: 2.5rem;
+}
+
+.popup-info .btn-group .info-btn {
+   padding: 1rem 2.2rem;
+   border-radius: var(--radius);
+   font-size: 1.5rem;
+   font-weight: 700;
+   cursor: pointer;
+   text-decoration: none;
+   transition: var(--transition);
+}
+
+.popup-info .btn-group .exit-btn {
+   background-color: transparent;
+   border: var(--border);
+   color: var(--black);
+}
+
+.popup-info .btn-group .exit-btn:hover {
+   background-color: var(--light-bg);
+}
+
+.popup-info .btn-group .continue-btn {
+   background-color: var(--main-color);
+   color: #fff;
+   border: none;
+}
+
+.popup-info .btn-group .continue-btn:hover {
+   background-color: var(--main-color-hover);
+   transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   3. INTERACTIVE QUIZ BOX
+   ========================================================================== */
+.quiz-section {
+   display: none;
+   width: 100%;
+}
+
+.quiz-section.active {
+   display: block;
+}
+
+.quiz-box {
+   background-color: var(--card-bg);
+   border-radius: var(--radius);
+   padding: 3rem;
+   border: var(--border);
+   box-shadow: var(--shadow);
+   display: none;
+   width: 100%;
+}
+
+.quiz-box.active {
+   display: block;
+}
+
+.quiz-box h2 {
+   font-size: 2.4rem;
+   font-weight: 800;
+   color: var(--black);
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.quiz-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.2rem 1.8rem;
+   background-color: var(--light-bg);
+   border-radius: var(--radius);
+   border: var(--border);
+   margin-bottom: 2.5rem;
+}
+
+.quiz-header span {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--light-color);
+}
+
+.quiz-header .header-score {
+   background-color: var(--main-light);
+   color: var(--main-color);
+   padding: 0.5rem 1.4rem;
+   border-radius: var(--radius);
+   font-weight: 800;
+   font-size: 1.5rem;
+}
+
+.question-text {
+   font-size: 1.9rem;
+   font-weight: 700;
+   color: var(--black);
+   margin-bottom: 2rem;
+   line-height: 1.5;
+}
+
+.option-list {
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+   margin-bottom: 2.5rem;
+}
+
+.option-list .option {
+   background-color: var(--light-bg);
+   border: var(--border);
+   border-radius: var(--radius);
+   padding: 1.4rem 2rem;
+   font-size: 1.6rem;
+   font-weight: 600;
+   color: var(--black);
+   cursor: pointer;
+   transition: var(--transition);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.option-list .option:hover {
+   border-color: var(--main-color);
+   transform: translateX(4px);
+}
+
+.option-list .option.correct {
+   background-color: rgba(46, 204, 113, 0.15) !important;
+   border-color: var(--green) !important;
+   color: var(--green) !important;
+   font-weight: 700;
+}
+
+.option-list .option.incorrect {
+   background-color: rgba(231, 76, 60, 0.15) !important;
+   border-color: var(--red) !important;
+   color: var(--red) !important;
+   font-weight: 700;
+}
+
+.option-list .option.disabled {
+   pointer-events: none;
+}
+
+.quiz-footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-top: var(--border);
+   padding-top: 2rem;
+}
+
+.question-total {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: var(--light-color);
+}
+
+.next-btn {
+   margin-top: 0;
+   opacity: 0.5;
+   pointer-events: none;
+}
+
+.next-btn.active {
+   opacity: 1;
+   pointer-events: auto;
+}
+
+/* ==========================================================================
+   4. ASSESSMENT RESULTS SUMMARY CARD
+   ========================================================================== */
+.result-box {
+   background-color: var(--card-bg);
+   border-radius: var(--radius);
+   padding: 4rem 3rem;
+   border: var(--border);
+   box-shadow: var(--shadow);
+   text-align: center;
+   display: none;
+   width: 100%;
+}
+
+.result-box.active {
+   display: block;
+}
+
+.result-box h2 {
+   font-size: 2.8rem;
+   font-weight: 800;
+   color: var(--black);
+   margin-bottom: 1.5rem;
+}
+
+.result-box .result-grade-badge {
+   display: inline-block;
+   font-size: 2.4rem;
+   font-weight: 800;
+   color: var(--green);
+   background-color: rgba(46, 204, 113, 0.15);
+   padding: 0.8rem 2.5rem;
+   border-radius: var(--radius);
+   margin: 1.5rem 0;
+   border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.result-box .score-text {
+   font-size: 1.8rem;
+   color: var(--light-color);
+   margin-bottom: 2.5rem;
+}
+
+.result-box .result-stats {
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   margin-bottom: 3rem;
+   flex-wrap: wrap;
+}
+
+.result-box .stat-item {
+   background-color: var(--light-bg);
+   padding: 1.8rem 3rem;
+   border-radius: var(--radius);
+   border: var(--border);
+   min-width: 18rem;
+}
+
+.result-box .stat-val {
+   font-size: 2.6rem;
+   font-weight: 800;
+}
+
+.result-box .stat-val.correct {
+   color: var(--green);
+}
+
+.result-box .stat-val.incorrect {
+   color: var(--red);
+}
+
+.result-box .stat-label {
+   font-size: 1.4rem;
+   color: var(--light-color);
+   margin-top: 0.5rem;
+}
+
+.result-box .btn-actions {
+   display: flex;
+   justify-content: center;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+}
+
+.result-box .btn-actions button,
+.result-box .btn-actions a {
+   margin-top: 0;
+}
